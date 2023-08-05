@@ -54,7 +54,7 @@ wasm: js
 
 deploy-web: js
 	-rm -rf tmp
-	git clone https://github.com/inqizit/unlearn.git tmp
+	git clone https://github.com/inqizit-public/gioui-template.git tmp
 	cd tmp; git checkout gh-pages; rm -rf *; cp ${DIST_JS}/* .; git add .; git commit -m "deploy"; git push
 	-rm -rf tmp
 
